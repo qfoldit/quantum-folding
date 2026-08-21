@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Interaction &mdash; Quantum protein folding 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=8d563738"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -64,7 +64,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#interaction.interaction.Interaction"><code class="docutils literal notranslate"><span class="pre">Interaction</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#interaction.interaction.Interaction.__init__"><code class="docutils literal notranslate"><span class="pre">Interaction.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#interaction.interaction.Interaction._abc_impl"><code class="docutils literal notranslate"><span class="pre">Interaction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#interaction.interaction.Interaction._interaction_matrix_path"><code class="docutils literal notranslate"><span class="pre">Interaction._interaction_matrix_path</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#interaction.interaction.Interaction.get_energy"><code class="docutils literal notranslate"><span class="pre">Interaction.get_energy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#interaction.interaction.Interaction.valid_symbols"><code class="docutils literal notranslate"><span class="pre">Interaction.valid_symbols</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#mj-matrix-format-assumptions">MJ matrix format assumptions</a></li>
@@ -148,7 +150,7 @@ independent of residue identities (here set to -1.0). All other pairs have energ
 </section>
 <dl class="py class">
 <dt class="sig sig-object py" id="interaction.hp_interaction.HPInteraction">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">interaction.hp_interaction.</span></span><span class="sig-name descname"><span class="pre">HPInteraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_matrix_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">HP_INTERACTION_MATRIX_FILEPATH</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.hp_interaction.HPInteraction" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">interaction.hp_interaction.</span></span><span class="sig-name descname"><span class="pre">HPInteraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_matrix_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">HP_INTERACTION_MATRIX_FILEPATH</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.hp_interaction.HPInteraction" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#interaction.interaction.Interaction" title="interaction.interaction.Interaction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Interaction</span></code></a></p>
 <p>Interaction model implementing the classical Hydrophobic/Polar (HP) scheme.</p>
 <p>Loads a binary HP matrix, tracks hydrophobic symbols, and provides a
@@ -166,7 +168,7 @@ pairwise energy function where only H-H contacts contribute negatively.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="interaction.hp_interaction.HPInteraction._abc_impl">
-<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#interaction.hp_interaction.HPInteraction._abc_impl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></span><a class="headerlink" href="#interaction.hp_interaction.HPInteraction._abc_impl" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -250,7 +252,7 @@ otherwise returns the non-hydrophobic contact energy (HP_NON_HH_CONTACT_ENERGY).
 and computes interaction energies used in folding models such as HP or MJ.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="interaction.interaction.Interaction">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">interaction.interaction.</span></span><span class="sig-name descname"><span class="pre">Interaction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_matrix_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.interaction.Interaction" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">interaction.interaction.</span></span><span class="sig-name descname"><span class="pre">Interaction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_matrix_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.interaction.Interaction" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
 <p>Abstract base class for interaction models.</p>
 <p>Subclasses must implement <cite>get_energy</cite> to return a numeric energy value and define their own initialization logic.
@@ -273,12 +275,17 @@ Subclasses should also manage to properly set the <cite>valid_symbols</cite> set
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="interaction.interaction.Interaction._abc_impl">
-<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#interaction.interaction.Interaction._abc_impl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></span><a class="headerlink" href="#interaction.interaction.Interaction._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="interaction.interaction.Interaction._interaction_matrix_path">
+<span class="sig-name descname"><span class="pre">_interaction_matrix_path</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Path</span></span><a class="headerlink" href="#interaction.interaction.Interaction._interaction_matrix_path" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="interaction.interaction.Interaction.get_energy">
-<em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbol_j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.interaction.Interaction.get_energy" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbol_j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.interaction.Interaction.get_energy" title="Link to this definition"></a></dt>
 <dd><p>Compute and return the interaction energy.</p>
 <p>This method must be implemented by all subclasses.</p>
 <dl class="field-list simple">
@@ -293,6 +300,11 @@ Subclasses should also manage to properly set the <cite>valid_symbols</cite> set
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="interaction.interaction.Interaction.valid_symbols">
+<span class="sig-name descname"><span class="pre">valid_symbols</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#interaction.interaction.Interaction.valid_symbols" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -314,7 +326,7 @@ present with the same energy.</p>
 </section>
 <dl class="py class">
 <dt class="sig sig-object py" id="interaction.mj_interaction.MJInteraction">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">interaction.mj_interaction.</span></span><span class="sig-name descname"><span class="pre">MJInteraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_matrix_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">MJ_INTERACTION_MATRIX_FILEPATH</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.mj_interaction.MJInteraction" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">interaction.mj_interaction.</span></span><span class="sig-name descname"><span class="pre">MJInteraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_matrix_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">MJ_INTERACTION_MATRIX_FILEPATH</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#interaction.mj_interaction.MJInteraction" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#interaction.interaction.Interaction" title="interaction.interaction.Interaction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Interaction</span></code></a></p>
 <p>MJ interaction model that loads the MJ matrix and exposes pairwise residue contact energies.</p>
 <dl class="field-list simple">
@@ -337,7 +349,7 @@ residue-residue pairs to their contact energies.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="interaction.mj_interaction.MJInteraction._abc_impl">
-<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#interaction.mj_interaction.MJInteraction._abc_impl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></span><a class="headerlink" href="#interaction.mj_interaction.MJInteraction._abc_impl" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">

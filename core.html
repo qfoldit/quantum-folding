@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Core modules &mdash; Quantum protein folding 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=8d563738"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -225,117 +225,117 @@ project.</p>
 <p>Defines key enumerations for modeling protein folding constraints and encodings.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="enums.BackendType">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">BackendType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.BackendType" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">BackendType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.BackendType" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Enum representing quantum backend types for VQE execution.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.BackendType.IBM_QUANTUM">
-<span class="sig-name descname"><span class="pre">IBM_QUANTUM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ibm_quantum'</span></em><a class="headerlink" href="#enums.BackendType.IBM_QUANTUM" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">IBM_QUANTUM</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ibm_quantum'</span></span><a class="headerlink" href="#enums.BackendType.IBM_QUANTUM" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.BackendType.LOCAL_STATEVECTOR">
-<span class="sig-name descname"><span class="pre">LOCAL_STATEVECTOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'local_statevector'</span></em><a class="headerlink" href="#enums.BackendType.LOCAL_STATEVECTOR" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LOCAL_STATEVECTOR</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'local_statevector'</span></span><a class="headerlink" href="#enums.BackendType.LOCAL_STATEVECTOR" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="enums.ConformationEncoding">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">ConformationEncoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.ConformationEncoding" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">ConformationEncoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.ConformationEncoding" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
 <p>Enum representing a map of encoding types and qubit counts.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.ConformationEncoding.DENSE">
-<span class="sig-name descname"><span class="pre">DENSE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#enums.ConformationEncoding.DENSE" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DENSE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#enums.ConformationEncoding.DENSE" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.ConformationEncoding.SPARSE">
-<span class="sig-name descname"><span class="pre">SPARSE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#enums.ConformationEncoding.SPARSE" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SPARSE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></span><a class="headerlink" href="#enums.ConformationEncoding.SPARSE" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="enums.InteractionType">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">InteractionType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.InteractionType" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">InteractionType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.InteractionType" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
 <p>Enum representing interaction types.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.InteractionType.HP">
-<span class="sig-name descname"><span class="pre">HP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#enums.InteractionType.HP" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">HP</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#enums.InteractionType.HP" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.InteractionType.MJ">
-<span class="sig-name descname"><span class="pre">MJ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#enums.InteractionType.MJ" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MJ</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></span><a class="headerlink" href="#enums.InteractionType.MJ" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="enums.Penalties">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">Penalties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.Penalties" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">Penalties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.Penalties" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
 <p>Enum representing penalty types for protein folding constraints.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.Penalties.BACK_PENALTY">
-<span class="sig-name descname"><span class="pre">BACK_PENALTY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#enums.Penalties.BACK_PENALTY" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">BACK_PENALTY</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></span><a class="headerlink" href="#enums.Penalties.BACK_PENALTY" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.Penalties.CHIRALITY_PENALTY">
-<span class="sig-name descname"><span class="pre">CHIRALITY_PENALTY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#enums.Penalties.CHIRALITY_PENALTY" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CHIRALITY_PENALTY</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></span><a class="headerlink" href="#enums.Penalties.CHIRALITY_PENALTY" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.Penalties.OVERLAP_PENALTY">
-<span class="sig-name descname"><span class="pre">OVERLAP_PENALTY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#enums.Penalties.OVERLAP_PENALTY" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">OVERLAP_PENALTY</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></span><a class="headerlink" href="#enums.Penalties.OVERLAP_PENALTY" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="enums.SubLattice">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">SubLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.SubLattice" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">SubLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.SubLattice" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
 <p>Enum representing the sublattices in the protein chain.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.SubLattice.A">
-<span class="sig-name descname"><span class="pre">A</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#enums.SubLattice.A" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">A</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></span><a class="headerlink" href="#enums.SubLattice.A" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.SubLattice.B">
-<span class="sig-name descname"><span class="pre">B</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#enums.SubLattice.B" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">B</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#enums.SubLattice.B" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="enums.TurnDirection">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">TurnDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.TurnDirection" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">enums.</span></span><span class="sig-name descname"><span class="pre">TurnDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enums.TurnDirection" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
 <p>Enum representing turn directions on a tetrahedral lattice.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.TurnDirection.DIR_0">
-<span class="sig-name descname"><span class="pre">DIR_0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#enums.TurnDirection.DIR_0" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DIR_0</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></span><a class="headerlink" href="#enums.TurnDirection.DIR_0" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.TurnDirection.DIR_1">
-<span class="sig-name descname"><span class="pre">DIR_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#enums.TurnDirection.DIR_1" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DIR_1</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#enums.TurnDirection.DIR_1" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.TurnDirection.DIR_2">
-<span class="sig-name descname"><span class="pre">DIR_2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#enums.TurnDirection.DIR_2" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DIR_2</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#enums.TurnDirection.DIR_2" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="enums.TurnDirection.DIR_3">
-<span class="sig-name descname"><span class="pre">DIR_3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#enums.TurnDirection.DIR_3" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DIR_3</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></span><a class="headerlink" href="#enums.TurnDirection.DIR_3" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -346,7 +346,7 @@ project.</p>
 <p>Defines custom exceptions for protein folding simulations, including errors for conformation encoding, chain length, and amino acid validity.</p>
 <dl class="py exception">
 <dt class="sig sig-object py" id="exceptions.ChainLengthError">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">ChainLengthError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">chain</span> <span class="pre">length.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">length</span> <span class="pre">is</span> <span class="pre">correct.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.ChainLengthError" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">ChainLengthError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">chain</span> <span class="pre">length.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">length</span> <span class="pre">is</span> <span class="pre">correct.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.ChainLengthError" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception raised for errors in the chain length.</p>
 <dl class="py method">
@@ -358,7 +358,7 @@ project.</p>
 
 <dl class="py exception">
 <dt class="sig sig-object py" id="exceptions.ConformationEncodingError">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">ConformationEncodingError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">conformation</span> <span class="pre">encoding.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">encoding</span> <span class="pre">is</span> <span class="pre">of</span> <span class="pre">type</span> <span class="pre">ConformationEncoding.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.ConformationEncodingError" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">ConformationEncodingError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">conformation</span> <span class="pre">encoding.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">encoding</span> <span class="pre">is</span> <span class="pre">of</span> <span class="pre">type</span> <span class="pre">ConformationEncoding.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.ConformationEncodingError" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception raised for errors in the conformation encoding.</p>
 <dl class="py method">
@@ -370,7 +370,7 @@ project.</p>
 
 <dl class="py exception">
 <dt class="sig sig-object py" id="exceptions.InvalidBackendError">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidBackendError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">backend/API</span> <span class="pre">key</span> <span class="pre">configuration</span> <span class="pre">or</span> <span class="pre">unsupported</span> <span class="pre">backend</span> <span class="pre">type.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.InvalidBackendError" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidBackendError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">backend/API</span> <span class="pre">key</span> <span class="pre">configuration</span> <span class="pre">or</span> <span class="pre">unsupported</span> <span class="pre">backend</span> <span class="pre">type.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.InvalidBackendError" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception raised when backend configuration is invalid or unsupported.</p>
 <dl class="py method">
@@ -382,7 +382,7 @@ project.</p>
 
 <dl class="py exception">
 <dt class="sig sig-object py" id="exceptions.InvalidInteractionTypeError">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidInteractionTypeError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">interaction</span> <span class="pre">type.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">interaction</span> <span class="pre">type</span> <span class="pre">is</span> <span class="pre">of</span> <span class="pre">type</span> <span class="pre">InteractionType.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.InvalidInteractionTypeError" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidInteractionTypeError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">interaction</span> <span class="pre">type.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">interaction</span> <span class="pre">type</span> <span class="pre">is</span> <span class="pre">of</span> <span class="pre">type</span> <span class="pre">InteractionType.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.InvalidInteractionTypeError" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception raised when an invalid interaction type is encountered.</p>
 <dl class="py method">
@@ -394,7 +394,7 @@ project.</p>
 
 <dl class="py exception">
 <dt class="sig sig-object py" id="exceptions.InvalidOperatorError">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidOperatorError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">quantum</span> <span class="pre">operator</span> <span class="pre">encountered.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">operator</span> <span class="pre">is</span> <span class="pre">valid.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.InvalidOperatorError" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidOperatorError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">quantum</span> <span class="pre">operator</span> <span class="pre">encountered.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">operator</span> <span class="pre">is</span> <span class="pre">valid.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.InvalidOperatorError" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception raised when an invalid quantum operator is encountered.</p>
 <dl class="py method">
@@ -406,7 +406,7 @@ project.</p>
 
 <dl class="py exception">
 <dt class="sig sig-object py" id="exceptions.UnsupportedAminoAcidSymbolError">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">UnsupportedAminoAcidSymbolError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">amino</span> <span class="pre">acid</span> <span class="pre">symbol.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">amino</span> <span class="pre">acid</span> <span class="pre">symbol</span> <span class="pre">is</span> <span class="pre">compatible</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">solution.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.UnsupportedAminoAcidSymbolError" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">exceptions.</span></span><span class="sig-name descname"><span class="pre">UnsupportedAminoAcidSymbolError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Invalid</span> <span class="pre">amino</span> <span class="pre">acid</span> <span class="pre">symbol.</span> <span class="pre">Make</span> <span class="pre">sure</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">amino</span> <span class="pre">acid</span> <span class="pre">symbol</span> <span class="pre">is</span> <span class="pre">compatible</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">solution.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exceptions.UnsupportedAminoAcidSymbolError" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception raised when amino acid symbol is not included in interaction.</p>
 <dl class="py method">
